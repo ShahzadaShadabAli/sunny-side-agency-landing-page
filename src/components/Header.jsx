@@ -7,8 +7,8 @@ const Header = () => {
         <Navbar />
         <h1 className='text-7xl max-sm:text-4xl text-center fraunces-bold mt-24 tracking-[0.2em] font-bold text-white'>WE ARE CREATIVES</h1>
         <img src="/images/icon-arrow-down.svg" className='mt-24' width="45px" alt="" />
-      <img src="/images/desktop/image-header.jpg" className='h-screen w-full absolute main-img max-md:hidden' alt="" />
-      <img src="/images/mobile/image-header.jpg" className='h-screen w-full absolute main-img md:hidden' alt="" />
+      <img src="/images/desktop/image-header.jpg" className='h-screen w-full absolute object-cover main-img max-md:hidden' alt="" />
+      <img src="/images/mobile/image-header.jpg" className='h-screen w-full absolute object-cover main-img md:hidden' alt="" />
     </header>
   )
 }
