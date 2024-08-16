@@ -23,7 +23,7 @@ const Navbar = () => {
         </li>
       </ul>
      <img src="/images/icon-hamburger.svg" onClick={() => setIsClicked((prev) => !prev)} className='md:hidden cursor-pointer' alt="" />
-      <ul className="flex flex-col absolute scale-0 collapser w-[100%] top-32 p-10 text-gray-500 font-barlow text-xl gap-12 items-center bg-white md:hidden">
+      <ul className="flex flex-col absolute z-50 scale-0 collapser w-[100%] top-32 p-10 text-gray-500 font-barlow text-xl gap-12 items-center bg-white md:hidden">
         <li className='cursor-pointer hover-effect-gray '>About</li>
         <li className='cursor-pointer hover-effect-gray'>Services</li>
         <li className='cursor-pointer hover-effect-gray'>Projects</li>
