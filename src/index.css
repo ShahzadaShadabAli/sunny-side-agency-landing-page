@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-barlow {
+    font-family: "Barlow";
+    font-weight: 600;
+}
+
+.fraunces-semibold {
+    font-family: "Fraunces";
+    font-weight: 700;
+}
+
+.fraunces-bold {
+    font-family: "Fraunces";
+    font-weight: 900;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-img {
+    z-index: -10;
+}
+
+.edit-heading-fdf3b8, .edit-heading-tomato {
+    position: relative;
+}
+
+.edit-heading-fdf3b8::before {
+    transition: all 0.5s;
+    width: 160px;
+    position: absolute;
+    content: '';
+    background: #fdf3b8;
+    border-radius: 30px;
+    height: 12px;
+    bottom: 1px;
+    z-index: -1;
+    left: -10px;
+}
+
+.edit-heading-fdf3b8:hover::before {
+    background: #ffea75;
+}
+
+.edit-heading-tomato::before {
+    transition: all 0.5s;
+    width: 160px;
+    position: absolute;
+    content: '';
+    background: rgba(255, 99, 71, 0.349);
+    border-radius: 30px;
+    height: 12px;
+    bottom: 1px;
+    z-index: -1;
+    left: -10px;
+}
+
+.edit-heading-tomato:hover::before {
+    background: rgba(255, 99, 71, 0.701);
+}
+
+.collapser {
+    transition: all 0.2s ease-in;
+}
+
+.collapser::before {
+    content: '';
+    position: absolute;
+    top: -25px; /* Adjust based on the size of the triangle */
+    right: 0px; /* Position the triangle to the top-right */
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-bottom: 30px solid #ffffff; 
+    transition: all 0.2s ease-in;
+}
+
+.hover-effect {
+    position: relative;
+}
+
+.hover-effect::before {
+    content: '';
+    position: absolute;
+    transition: all 0.4s;
+    background: white;
+    height: 3px;
+    width: 0px;
+    border-radius: 40px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hover-effect:hover::before {
+    width: 100%;
+}
+
+.hover-effect-gray {
+    position: relative;
+}
+
+.hover-effect-gray::before {
+    content: '';
+    position: absolute;
+    transition: all 0.4s;
+    background: rgb(123, 122, 122);
+    height: 3px;
+    width: 0px;
+    border-radius: 40px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hover-effect-gray:hover::before {
+    width: 100%;
+}
+
